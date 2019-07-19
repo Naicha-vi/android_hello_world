@@ -36,12 +36,13 @@ public class HelloWorldActivity extends Activity {
 		itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
 		lvItems = (ListView) findViewById(R.id.lvitems);
 
+        items = new ArrayList<String>();
+        lvItems.setAdapter(itemsAdapter);
 		// mock data
 		items.add("First item");
 		items.add("Second item");
 
 		readItems();
-
 		setupListViewListener();
 	}
 

@@ -26,7 +26,8 @@
         android:ems="10"
         android:hint="Add a new item here"
         android:inputType="textPersonName"
-        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+        android:textAppearance="@android:style/TextAppearance.Material.Body2"
+        tools:targetApi="lollipop" />
 
     <ListView
         android:id="@+id/lvitems"
